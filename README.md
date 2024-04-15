@@ -23,7 +23,7 @@ This project is build with the following technologies:
 ## Installation in local
 1. Clone the repository
 ```bash
-git clone
+git clone https://github.com/GreatNerve/todo-react.git
 ```
 2. Install the dependencies
 ```bash
