@@ -6,7 +6,7 @@ This project is build with the following technologies:
 - [Shadcn.ui](https://ui.shadcn.com/)
 
 ## Deployed Link
-[Ff](fff)
+[todoreactappgn.vercel.app/](https://todoreactappgn.vercel.app/)
 
 ## Features
 - Add a new todo
@@ -23,7 +23,7 @@ This project is build with the following technologies:
 ## Installation in local
 1. Clone the repository
 ```bash
-git clone
+git clone https://github.com/GreatNerve/todo-react.git
 ```
 2. Install the dependencies
 ```bash
