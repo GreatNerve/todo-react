@@ -6,7 +6,7 @@ This project is build with the following technologies:
 - [Shadcn.ui](https://ui.shadcn.com/)
 
 ## Deployed Link
-[Ff](fff)
+[todoreactappgn.vercel.app/](https://todoreactappgn.vercel.app/)
 
 ## Features
 - Add a new todo
