@@ -49,6 +49,15 @@ const Todo = () => {
     }
   }, [dispatch]);
 
+  function undo({text, completed}) {
+    dispatch(addTodo({
+      text,
+      completed
+    }));
+    }
+    
+  
+
   const deleteTodo = (todo) => {
     dispatch(removeTodo(todo.id));
     toast({
@@ -56,7 +65,9 @@ const Todo = () => {
       action: (
         <ToastAction
           altText="Undo"
-          onClick={() => dispatch(addTodo(todo.text))}
+          onClick={
+            () => undo(todo)
+          }
         >
           Undo
         </ToastAction>
@@ -72,9 +83,9 @@ const Todo = () => {
   });
 
   function onSubmit(data) {
-    dispatch(addTodo(data.todo));
-    toast({
-      title: "Todo Added Successfully",
+    dispatch(addTodo({text : data.todo, completed: false}));
+    toast({ 
+      title: "Todo Added Successfully"
     });
     form.reset();
   }
