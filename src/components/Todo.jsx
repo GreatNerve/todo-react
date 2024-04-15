@@ -76,6 +76,7 @@ const Todo = () => {
     toast({
       title: "Todo Added Successfully",
     });
+    form.reset();
   }
 
   return (
